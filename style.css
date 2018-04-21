@@ -1,0 +1,425 @@
+/* TechKnowledgey */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/* to remove inputs' blueish outline on focus */
+*:focus {
+	outline: none;
+}
+
+/* importing new font and giving it name */
+@font-face {
+    font-family: segoe;
+    src: url('files/segoe-ui-light.ttf');
+}
+
+body {
+	background: #E9EAEA;
+	font-family: 'segoe', Humanst521 Lt BT, sans-serif;
+	font-weight: 300;
+	height: 2000px;
+	color: #204056;
+}
+
+/* Start of header (fixed) */
+#header {
+	background: white;
+	width: 100%;
+	height: 50px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+	position: fixed;
+	z-index: 1;
+}
+
+.logo {
+	height: 50px;
+	width: 50%;
+	float: left;
+}
+
+.logo img {
+	height: 32px;
+	margin-left: 30%;
+	margin-top: 10px;
+}
+
+#header ul {
+	height: 50px;
+	width: 69%;
+	margin-left: 50%;
+	padding-left: 20%;
+}
+
+#header li {
+	list-style: none;
+	border: 1px solid;
+	height: 37px;
+	width: 100px;
+	float: left;
+	margin: 5px;
+}
+
+.login {
+	color: #34B3A0;
+	text-align: center;
+	font-size: 16px;
+	line-height: 34px;
+	transition: color .2s;
+}
+
+.login:hover {
+	color: #46C9B6;
+}
+
+.signup {
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	line-height: 34px;
+}
+
+.signup li {
+	background: #34B3A0;
+	border: 1px solid #34B3A0;
+	transition: background .2s;
+}
+
+.signup li:hover{
+	background: #46C9B6;
+}
+
+/* End of header (fixed) */
+
+
+/* start of main content part 1 | which displays first */
+#wrapper-1 {
+	//border: 1px solid;
+	padding-top: 50px;
+	margin: auto;
+	width: 80%;
+	color: #204056;
+	text-align: center;
+	height: 640px;
+}
+
+#wrapper-1 p.ltc {
+	margin-top: 60px;
+	font-size: 40px;
+	margin-bottom: 70px;
+}
+
+.comp {
+	//border: 1px solid;
+	width:50%;
+	height: 320px;
+	background: url(img/comp.jpg);
+	background-position: center 20px;
+	background-size: 350px auto;
+	background-repeat: no-repeat;
+	float: left;
+	margin: 30px 0% 0px 0%;
+}
+
+.for-form {
+	width: 59%;
+	height: 360px;
+	//border: 1px solid;
+	margin-left: 50%;
+	padding-left: 10%;
+}
+
+.form {
+	float: left;
+	//border: 1px solid #ccc;
+	height: 200px;
+	width: 320px;
+	font-family: calibri;
+}
+
+.form p {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.form input {
+	color: #204056;
+	width: 100%;
+	height: 45px;
+	margin-bottom: -1px;
+	padding-left: 55px;
+	border: 1px solid #ccc;
+	font-size: 18px;
+	font-family: calibri;
+}
+
+input[type=submit] {
+	padding-left: 0px;
+	margin-top: 20px;
+	background: #34B3A0;
+	color: white;
+	border: 1px solid #34B3A0;
+	transition: color .1s, background .2s;
+	margin-bottom: 10px;
+}
+input[type=submit]:hover {
+	background: white;
+	color: #34B3A0;
+}
+
+input[type=email] {	background: white url(img/email.png);}
+input[type=password] {	background: white url(img/password.png);}
+input[placeholder="Username"] {	background: white url(img/username.png);}
+
+input[type=email], input[type=password], input[placeholder="Username"] {
+	background-size: 50px;
+	background-repeat: no-repeat;
+	background-position: -2%;
+	transition: padding-left .3s, background-position .2s;
+}
+
+input[type=email]:focus {	background-image: url(img/email-active.png);}
+input[type=password]:focus {	background-image: url(img/password-active.png);}
+input[placeholder="Username"]:focus {	background-image: url(img/username-active.png);}
+
+input[type=email]:focus, input[type=password]:focus, input[placeholder="Username"]:focus {
+	background-position: 102%;
+	padding-left: 5px;
+	color: black;
+}
+
+.social-reg a {
+	display: inline-block;
+	border: 1px solid;
+	width: 48%;
+	height: 45px;
+	color: #808080;
+	background-color: white;
+	line-height: 45px;
+	text-decoration: none;
+	margin: 2px;
+	border: 0px;
+	transition: background .2s;
+}
+
+.google {	background: url(img/google-signup.png); }
+.fb {	background: url(img/fb-signup.png); }
+
+.google, .fb{
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	background-position: 5px center;
+}
+
+.social-reg a:hover {
+	background: #E0E0E0;
+}
+
+p.tos {
+	font-size: 15px;
+}
+
+p.tos a {
+	background: none;
+	padding: 0px;
+	display: inline;
+	line-height:10px;
+	color: black;
+}
+/* end of main content part 1 */
+
+/* start of main content part 2 */
+
+#wrapper-2 {
+	background: white;
+	min-height: 200px;
+	width: 100%;
+	margin: auto;
+}
+
+.text {
+	//border: 1px solid red;
+	height: 450px;
+	width: 40%;
+	float: left;
+	text-align: right;
+	padding: 11% 0 0 10%;
+}
+
+.video {
+	display: block;
+	//border: 1px solid blue;
+	height: 450px;
+	margin-left: 45%;
+	width: 53%;
+	padding: 2% 0%;
+}
+
+/* end of main content part 2 */
+
+/* start of main content part 3 */
+
+#wrapper-3 {
+	min-height: 600px;
+	width: 70%;
+	margin: auto;
+	//border: 1px solid;
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: 50px;;
+}
+
+#wrapper-3 a.story {
+	color: #204056;
+	transition: color .2s;
+}
+
+#wrapper-3 a.story:hover {
+	color: white;
+}
+
+.story-1, .story-2, .story-3 {
+	padding: 30px;
+	margin: 50px 0px;
+	height: 400px;
+	width: 31.9%;
+	background: white;
+	float: left;
+	transition: background .2s;
+}
+
+.story-1:hover, .story-2:hover, .story-3:hover {
+	background: #34B3A0;
+}
+
+.story-1 {
+	margin-right: 10px;
+}
+
+.story-1 img {
+	margin: 20px;
+	height: 35%;
+	width: auto;
+	border-radius: 100%;
+}
+
+.story-2 img {
+	margin: 20px;
+	height: 35%;
+	width: auto;
+	border-radius: 100%;
+}
+
+.story-3 img {
+	margin: 20px;
+	height: 35%;
+	width: auto;
+	border-radius: 100%;
+}
+
+.story-2 {
+	margin-right: 10px;
+}
+
+name {
+	font-weight: bold;
+}
+
+address {
+	font-style: normal;
+}
+
+a {
+	color: #204056;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+hr {
+	margin: 50px 3%;
+	opacity: .5;
+}
+
+/* end of main content part 3 */
+
+/* start of footer */
+
+footer {
+	width: 100%;
+	height: 450px;
+	background: #D4D5D6;
+	border-bottom: 1px solid #E9EAEA;
+}
+
+#footer {
+	width: 80%;
+	margin: auto;
+	height: 100%;
+}
+
+footer a {
+	text-decoration: none;
+	font-weight: 600;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+#footer span {
+	display: block;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: calibri;
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+.sec-1, .sec-2, .sec-3, .sec-4 {
+	height: 100%;
+	float: left;
+	padding-left: 10px;
+	line-height: 22px;
+	overflow: hidden;
+}
+
+.sec-1 {
+	width: 30%;
+	padding-top: 15px;
+}
+
+.sec-2 {
+	width: 22%;
+}
+
+.sec-3 {
+	width: 25.5%;
+}
+
+.sec-4 {
+	padding-top: 45px;
+	width: 22.5%
+}
+
+.social {
+	height: 30px;
+	margin: 5px;
+	opacity: .3;
+	transition: opacity .5s, transform .5s;
+}
+
+.social:hover {
+	opacity: .7;
+	transform: rotate(360deg);
+}
+
+.last {
+	float: right;
+}
+
+/* end of footer */
